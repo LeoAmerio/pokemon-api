@@ -37,7 +37,8 @@ export class CreatePokemonTable1693430300000 implements MigrationInterface {
           },
           {
             name: 'imageUrl',
-            type: 'varchar'
+            type: 'varchar',
+            length: '255'
           }
         ]
       }),

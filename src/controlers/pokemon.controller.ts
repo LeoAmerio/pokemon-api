@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Controller, Get } from '@nestjs/common';
-import { PokemonService } from './pokemon.service';
-import { Pokemon } from './pokemon.entity';
+import { PokemonService } from '../services/pokemon.service';
+import { Pokemon } from '../entities/pokemon.entity';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('pokemon')
@@ -12,7 +12,7 @@ export class PokemonController {
   @Get()
   @ApiOperation({ summary: 'Get all pokemons' })
   @ApiResponse({ status: 200, description: 'Return all pokemons.' })
-  async findAll(): Promise<Pokemon[]> {
-    return this.pokemonService.findAll();
+  async getAll(): Promise<Pokemon[]> {
+    return this.pokemonService.getAll();
   }
 }
