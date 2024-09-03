@@ -84,6 +84,7 @@ export class PopulatePokemon1693430400000 implements MigrationInterface {
   }
 }
 
+//Prueba 1
 // import { MigrationInterface, QueryRunner } from 'typeorm';
 
 // export class PopulatePokemon1693430400000 implements MigrationInterface {
@@ -107,7 +108,7 @@ export class PopulatePokemon1693430400000 implements MigrationInterface {
 //   }
 // }
 
-//PROBAR DESP ESTO
+//PRUEBA 2
 // import { MigrationInterface, QueryRunner } from 'typeorm';
 // import { Pokemon } from '../entities/pokemon.entity';
 
